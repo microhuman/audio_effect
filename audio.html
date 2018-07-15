@@ -5,13 +5,32 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 </head>
 <body>
+<style>
 
+.main{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+</style>
+
+<div class="main">
 <p>成都(赵雷)</p>
 <audio id="audio1" src="https://microhuman.github.io/audio_effect/chengdu.mp3" controls onplay="aplay()"></audio>
 
 
 <p>学猫叫(小潘潘/小峰峰)</p>
 <audio id="audio2" src="https://microhuman.github.io/audio_effect/xuemaojiao.mp3" controls onplay="bplay()"></audio>
+
+</div>
 
 <script>
   audio1.onplay=function(){
