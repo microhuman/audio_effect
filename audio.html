@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>audio effect</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+</head>
+<body>
+
+<p>成都(赵雷)</p>
+<audio id="audio1" src="https://microhuman.github.io/audio_effect/chengdu.mp3" controls onplay="aplay()"></audio>
+
+
+<p>学猫叫(小潘潘/小峰峰)</p>
+<audio id="audio2" src="https://microhuman.github.io/audio_effect/xuemaojiao.mp3" controls onplay="bplay()"></audio>
+
+<script>
+  audio1.onplay=function(){
+    audio2.pause();
+  };
+  audio2.onplay=function(){
+    audio1.pause();
+  };
+</script>
+
+</body>
+</html>
